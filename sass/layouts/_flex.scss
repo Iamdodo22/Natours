@@ -2,6 +2,9 @@
     @include rowFlex;
     padding: 0 5rem;
 }
+.row:not(:last-child){
+    margin-bottom: 8rem;
+}
 .col-1-of-2{
     @include colFlex($gap:0);
     width: 50%;
@@ -10,7 +13,8 @@
 .col-2-of-2{
     width: 50%;
 }
-// .col-1-of-4{
-//     @include colFlex;
-// }
+.col-1-of-3{
+    @include colFlex;
+    width: calc(100%/3);
+}
 

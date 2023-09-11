@@ -10,8 +10,18 @@
     transform: skewX(-12deg);
     @include rowFlex;
     margin-bottom: 4rem;
+    @include response (tab-port){
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+    @include response (phone){
+        transform: skew(0);
+    }
     &>*{
         transform: skewX(12deg);
+        @include response (phone){
+            transform: skewX(0);
+        }
     }
     &__shape{
         width: 15rem;

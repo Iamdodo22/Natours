@@ -2,6 +2,9 @@
     padding:6rem 0 4rem 8rem;
     position: relative;
     width: 50%;
+    @include response (tab-port){
+        width: 100%;
+    }
     &__input{
         font-size: 1.5rem;
         color: inherit;

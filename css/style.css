@@ -757,6 +757,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .story {
+    width: 80%;
     transform: skew(0);
     display: inline-block;
     padding: 2rem;

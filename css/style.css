@@ -530,6 +530,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .form {
     width: 100%;
+    padding: 6rem 0 4rem 0;
   }
 }
 .form__input {

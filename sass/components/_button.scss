@@ -24,6 +24,7 @@
     &--green{
         background-color: $color-primary;
         color: $color-white;
+        text-align: center;
         &::after{
             content:"";
             background-color: $color-primary;

@@ -8,6 +8,7 @@
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
+
     &__content{
         position: absolute;
         top: 50%;
@@ -20,21 +21,42 @@
         opacity: 0;
         display: table;
         transform: translate(-50%,-50%) scale(0.25);
-        transition: all .5s .2s;        
+        transition: all .5s .2s;
+        @include response (phone){
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+       }        
     }
     &__left{
       display: table-cell;
       width: calc(100%/3);
+      @include response (phone){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+     } 
     }
     &__right{
         display: table-cell;
         width: calc(200%/3);
         vertical-align: middle;
         padding: 3rem 5rem;
+        @include response (phone){
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding:.5rem 1rem ;
+       } 
       }
       &__img{
         display: block;
         width: 100%;
+        @include response (phone){
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+       } 
       }
       &__text{
         font-size: 1.4rem;

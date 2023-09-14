@@ -22,7 +22,7 @@
         display: block;
         transition: all 1s;
         @include response (phone){
-            margin-left: .5rem;
+            margin-left: 1rem;
         }
         &::-webkit-input-placeholder{
             color: $color-grey-dark-2;

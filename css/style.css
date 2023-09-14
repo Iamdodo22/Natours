@@ -527,6 +527,11 @@ body {
   position: relative;
   width: 50%;
 }
+@media only screen and (max-width: 37.5em) {
+  .form {
+    width: 100%;
+  }
+}
 .form__input {
   font-size: 1.5rem;
   color: inherit;
@@ -707,6 +712,7 @@ body {
   .story {
     transform: skew(0);
     display: inline-block;
+    padding: 1rem;
   }
 }
 .story > * {

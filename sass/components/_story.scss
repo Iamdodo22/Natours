@@ -16,11 +16,13 @@
     }
     @include response (phone){
         transform: skew(0);
+        display: inline-block;
     }
     &>*{
         transform: skewX(12deg);
         @include response (phone){
             transform: skewX(0);
+            
         }
     }
     &__shape{
@@ -30,6 +32,9 @@
        -webkit-shape-outside:circle(50% at 50% 50%);
        shape-outside:circle(50% at 50% 50%);
        position: relative;
+       @include response(phone){
+        float: left;
+    }
     }
     &__img{
         height: 100%;

@@ -759,7 +759,7 @@ body {
   .story {
     transform: skew(0);
     display: inline-block;
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 .story > * {

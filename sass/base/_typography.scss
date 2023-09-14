@@ -59,6 +59,9 @@
 font-size: $default-font-size; 
 font-weight: 700;
 text-transform: uppercase;
+@include response (phone){
+    margin-top: -2rem;
+ } 
 }
 .paragraph{
     font-size: $default-font-size;
